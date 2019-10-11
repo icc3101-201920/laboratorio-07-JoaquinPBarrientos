@@ -78,7 +78,7 @@ namespace Laboratorio_6_OOP_201902
                 return this.boardGame;
             }
         }
-  
+
 
         //Metodos
         public bool CheckIfEndGame()
@@ -107,22 +107,22 @@ namespace Laboratorio_6_OOP_201902
                 return -1;
             }
         }
-        
+
         public void Play()
         {
             int userInput = 0;
             int firstOrSecondUser = ActivePlayer.Id == 0 ? 0 : 1;
-            
+
 
             //turno 0 o configuracion
             if (turn == 0)
             {
-                for (int _ = 0; _<Players.Length; _++)
+                for (int _ = 0; _ < Players.Length; _++)
                 {
                     ActivePlayer = Players[firstOrSecondUser];
                     Visualization.ClearConsole();
                     //Mostrar mensaje de inicio
-                    Visualization.ShowProgramMessage($"Player {ActivePlayer.Id+1} select Deck and Captain:");
+                    Visualization.ShowProgramMessage($"Player {ActivePlayer.Id + 1} select Deck and Captain:");
                     //Preguntar por deck
                     Visualization.ShowDecks(this.Decks);
                     userInput = Visualization.GetUserInput(this.Decks.Count - 1);
@@ -143,7 +143,7 @@ namespace Laboratorio_6_OOP_201902
                     if (userInput == 0)
                     {
                         Visualization.ClearConsole();
-                        Visualization.ShowProgramMessage($"Player {ActivePlayer.Id+1} change cards:");
+                        Visualization.ShowProgramMessage($"Player {ActivePlayer.Id + 1} change cards:");
                         Visualization.ShowHand(ActivePlayer.Hand);
                         for (int i = 0; i < DEFAULT_CHANGE_CARDS_NUMBER; i++)
                         {
@@ -159,7 +159,7 @@ namespace Laboratorio_6_OOP_201902
                 turn += 1;
             }
 
-            
+
         }
         public void AddDecks()
         {
@@ -172,7 +172,7 @@ namespace Laboratorio_6_OOP_201902
             while (!reader.EndOfStream)
             {
                 string line = reader.ReadLine();
-                string [] cardDetails = line.Split(",");
+                string[] cardDetails = line.Split(",");
 
                 if (cardDetails[0] == "END")
                 {
@@ -185,7 +185,7 @@ namespace Laboratorio_6_OOP_201902
                     {
                         if (cardDetails[0] == nameof(CombatCard))
                         {
-                            cards.Add(new CombatCard(cardDetails[1], (EnumType) Enum.Parse(typeof(EnumType),cardDetails[2]), cardDetails[3], Int32.Parse(cardDetails[4]), bool.Parse(cardDetails[5])));
+                            cards.Add(new CombatCard(cardDetails[1], (EnumType)Enum.Parse(typeof(EnumType), cardDetails[2]), cardDetails[3], Int32.Parse(cardDetails[4]), bool.Parse(cardDetails[5])));
                         }
                         else
                         {
@@ -200,7 +200,7 @@ namespace Laboratorio_6_OOP_201902
                 }
 
             }
-            
+
         }
         public void AddCaptains()
         {
@@ -212,6 +212,11 @@ namespace Laboratorio_6_OOP_201902
                 string[] cardDetails = line.Split(",");
                 captains.Add(new SpecialCard(cardDetails[1], (EnumType)Enum.Parse(typeof(EnumType), cardDetails[2]), cardDetails[3]));
             }
+        }
+
+        public void GetRoundWinner()
+        {
+
         }
     }
 }

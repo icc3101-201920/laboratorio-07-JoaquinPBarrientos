@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Laboratorio_6_OOP_201902
 {
-    public class Player
+    public class Player : IAttackPoints
     {
         //Constantes
         private const int LIFE_POINTS = 2;
@@ -177,5 +177,9 @@ namespace Laboratorio_6_OOP_201902
             }
         }
 
+        public int[] GetAttackPoints(EnumType line = EnumType.None)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

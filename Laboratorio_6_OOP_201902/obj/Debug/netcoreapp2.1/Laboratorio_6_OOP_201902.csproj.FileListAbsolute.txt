@@ -1,0 +1,4 @@
+/Users/joaquinbarrientos/Desktop/Universidad/6.Sexto Semestre/POO/laboratorio-07-JoaquinPBarrientos/Laboratorio_6_OOP_201902/obj/Debug/netcoreapp2.1/Laboratorio_6_OOP_201902.csprojAssemblyReference.cache
+/Users/joaquinbarrientos/Desktop/Universidad/6.Sexto Semestre/POO/laboratorio-07-JoaquinPBarrientos/Laboratorio_6_OOP_201902/obj/Debug/netcoreapp2.1/Laboratorio_6_OOP_201902.csproj.CoreCompileInputs.cache
+/Users/joaquinbarrientos/Desktop/Universidad/6.Sexto Semestre/POO/laboratorio-07-JoaquinPBarrientos/Laboratorio_6_OOP_201902/obj/Debug/netcoreapp2.1/Laboratorio_6_OOP_201902.AssemblyInfoInputs.cache
+/Users/joaquinbarrientos/Desktop/Universidad/6.Sexto Semestre/POO/laboratorio-07-JoaquinPBarrientos/Laboratorio_6_OOP_201902/obj/Debug/netcoreapp2.1/Laboratorio_6_OOP_201902.AssemblyInfo.cs
