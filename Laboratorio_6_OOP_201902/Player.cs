@@ -179,7 +179,7 @@ namespace Laboratorio_6_OOP_201902
 
         public int[] GetAttackPoints(EnumType line = EnumType.None)
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Hola");
         }
     }
 }

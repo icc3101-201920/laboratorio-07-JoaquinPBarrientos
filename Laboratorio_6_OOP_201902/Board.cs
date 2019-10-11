@@ -121,9 +121,10 @@ namespace Laboratorio_6_OOP_201902
             if (line == EnumType.melee)
             {
                 //Debe sumar todos los puntos de ataque de las cartas melee y retornar los valores por jugador.
-                int[] totalAttack = new int[] { 0, 0 };
+                int[] totalAttack = new int[] {0,0};
+               
                 for (int i = 0; i < 2; i++)
-                {
+                {   
                     if (playerCards[i].ContainsKey(EnumType.melee))
                     {
                         foreach (CombatCard card in playerCards[i][EnumType.melee])
@@ -158,6 +159,7 @@ namespace Laboratorio_6_OOP_201902
             {
                 //Debe sumar todos los puntos de ataque de las cartas longRange y retornar los valores por jugador.
                 int[] totalAttack = new int[] { 0, 0 };
+
                 for (int i = 0; i < 2; i++)
                 {
                     if (playerCards[i].ContainsKey(EnumType.longRange))
